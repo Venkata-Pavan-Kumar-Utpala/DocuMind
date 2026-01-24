@@ -1,0 +1,67 @@
+# ===============================
+# Python
+# ===============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# ===============================
+# Environment variables
+# ===============================
+.env
+.env.*
+
+# ===============================
+# Logs & temp files
+# ===============================
+*.log
+*.tmp
+
+# ===============================
+# OS files
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Editor / IDE
+# ===============================
+.vscode/
+.idea/
+*.swp
+
+# ===============================
+# Data & uploads (important)
+# ===============================
+data/documents/*
+!data/documents/.gitkeep
+
+# Vector DB / embeddings
+*.faiss
+*.index
+chroma/
+vectorstore/
+
+# ===============================
+# Frontend (if added later)
+# ===============================
+node_modules/
+dist/
+build/
+
+# ===============================
+# Jupyter / experiments
+# ===============================
+.ipynb_checkpoints/
+notebooks/
