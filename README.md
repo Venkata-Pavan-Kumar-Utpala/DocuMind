@@ -45,22 +45,31 @@ Traditional LLM-based chatbots rely solely on pre-trained knowledge and may gene
 
 ## Project Structure
 
+```text
 documind-rag/
-│
 ├── backend/
-│ ├── app/
-│ │ ├── main.py
-│ │ ├── api/
-│ │ ├── services/
-│ │ ├── core/
-│ │ └── models/
-│ └── requirements.txt
-│
+│   ├── app/
+│   │   ├── main.py
+│   │   ├── api/
+│   │   │   ├── upload.py
+│   │   │   └── query.py
+│   │   ├── services/
+│   │   │   ├── pdf_loader.py
+│   │   │   ├── chunker.py
+│   │   │   ├── embeddings.py
+│   │   │   ├── vector_store.py
+│   │   │   └── rag.py
+│   │   ├── core/
+│   │   │   ├── config.py
+│   │   │   └── prompts.py
+│   │   └── models/
+│   │       └── schemas.py
+│   └── requirements.txt
 ├── data/
-│ └── documents/
-│
+│   └── documents/
 ├── README.md
 └── .gitignore
+```
 
 
 ---
